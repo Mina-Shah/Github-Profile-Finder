@@ -1,0 +1,155 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d1117;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #c9d1d9;
+}
+
+/* Main container */
+.github-profile-app {
+    background: #161b22;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #30363d;
+    box-sizing: border-box;
+}
+
+/* Input & button row */
+.github-profile-app div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Input */
+.input {
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: #0d1117;
+    color: #c9d1d9;
+    min-width: 0;
+}
+
+.input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+}
+
+/* Button */
+.search {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #238636;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.search:hover {
+    background: #2ea043;
+    transform: scale(1.05);
+}
+
+/* Error text */
+.error {
+    color: #f85149;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    min-height: 18px;
+}
+
+/* Profile info */
+.profile-info {
+    margin-top: 1.5rem;
+    display: none;
+}
+
+.avatar {
+    margin: 0 auto 1rem;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0f6fc;
+    word-break: break-word;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #8b949e;
+    font-style: italic;
+    margin-bottom: 1rem;
+    word-break: break-word;
+}
+
+.followers,
+.following,
+.public {
+    font-size: 0.95rem;
+    margin: 0.4rem 0;
+    color: #c9d1d9;
+    background: #21262d;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 480px) {
+    .github-profile-app {
+        padding: 1.2rem;
+        width: 90%;
+    }
+
+    .github-profile-app div {
+        flex-direction: column;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .bio {
+        font-size: 0.85rem;
+    }
+
+    .followers,
+    .following,
+    .public {
+        font-size: 0.8rem;
+    }
+}
